@@ -392,8 +392,8 @@
       }
     },
     "src/LinkedList.sol": {
-      "lastModificationDate": 1665863681974,
-      "contentHash": "3fb9447637226033063b2f9677b80c08",
+      "lastModificationDate": 1665871614998,
+      "contentHash": "8d906395454d573d1201fdbf9c666111",
       "sourceName": "src/LinkedList.sol",
       "solcConfig": {
         "settings": {
@@ -430,6 +430,89 @@
         },
         "StorageSlot": {
           "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedList.sol\\StorageSlot.json"
+        }
+      }
+    },
+    "src/LinkedListQueue.sol": {
+      "lastModificationDate": 1665950744409,
+      "contentHash": "ca5a38f8a45329b08b2a43a91ea0bb96",
+      "sourceName": "src/LinkedListQueue.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src\\LinkedListWithTail.sol",
+        "src\\StorageLinkedList.sol"
+      ],
+      "versionRequirement": null,
+      "artifacts": {
+        "LinkedListQueue": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListQueue.sol\\LinkedListQueue.json"
+        }
+      }
+    },
+    "src/LinkedListWithTail.sol": {
+      "lastModificationDate": 1665950721500,
+      "contentHash": "ab28a3dde862c2a1222e71724495d76a",
+      "sourceName": "src/LinkedListWithTail.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src\\StorageLinkedList.sol"
+      ],
+      "versionRequirement": null,
+      "artifacts": {
+        "LinkedListWithTail": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListWithTail.sol\\LinkedListWithTail.json"
         }
       }
     },
@@ -475,10 +558,10 @@
         }
       }
     },
-    "src/StorageReference.sol": {
-      "lastModificationDate": 1664260798428,
-      "contentHash": "17b573837ad636311dc3fd0a6e80f032",
-      "sourceName": "src/StorageReference.sol",
+    "src/StorageLinkedList.sol": {
+      "lastModificationDate": 1665950457235,
+      "contentHash": "e0a014656c7f18455187b77784428130",
+      "sourceName": "src/StorageLinkedList.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -507,25 +590,10 @@
         }
       },
       "imports": [],
-      "versionRequirement": "^0.8.7",
+      "versionRequirement": null,
       "artifacts": {
-        "StorageInline": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageReference.sol\\StorageInline.json"
-        },
-        "StoragePure": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageReference.sol\\StoragePure.json"
-        },
-        "StorageStorage": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageReference.sol\\StorageStorage.json"
-        },
-        "StoreInline": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageReference.sol\\StoreInline.json"
-        },
-        "StorePure": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageReference.sol\\StorePure.json"
-        },
-        "StoreStore": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageReference.sol\\StoreStore.json"
+        "StorageSlot": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageLinkedList.sol\\StorageSlot.json"
         }
       }
     },
@@ -622,6 +690,105 @@
       "artifacts": {
         "LinkedListTest": {
           "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedList.t.sol\\LinkedListTest.json"
+        }
+      }
+    },
+    "test/queue/LinkedListQueue.t.sol": {
+      "lastModificationDate": 1665951739815,
+      "contentHash": "7aea3369ded5924e0c6ea3c33e5225d4",
+      "sourceName": "test/queue/LinkedListQueue.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src\\Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src\\LinkedListQueue.sol",
+        "src\\LinkedListWithTail.sol",
+        "src\\StorageLinkedList.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "LinkedListQueueTest": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListQueue.t.sol\\LinkedListQueueTest.json"
+        }
+      }
+    },
+    "test/queue/LinkedListWithTail.t.sol": {
+      "lastModificationDate": 1665950781745,
+      "contentHash": "1b04a9a7d476dc28fe94d6f90d041b08",
+      "sourceName": "test/queue/LinkedListWithTail.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src\\Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src\\LinkedListWithTail.sol",
+        "src\\StorageLinkedList.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "LinkedListTest": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListWithTail.t.sol\\LinkedListTest.json"
         }
       }
     }
