@@ -5,8 +5,7 @@ import "forge-std/Test.sol";
 // import "../src/Counter.sol";
 import "../src/PointerArray.sol";
 
-contract CounterTest is Test {
-    // Counter public counter;
+contract ArrayTest is Test {
     Store public store;
     string varName = 'arr';
     function setUp() public {

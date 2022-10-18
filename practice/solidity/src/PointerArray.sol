@@ -51,10 +51,10 @@ library Storage {
 
     /** Start uint256 functions */
     function push(GenericArray storage input, uint256 val) internal {
-        // bytes32 slot = bytes32(uint256(input.start) + input.size);
+        bytes32 slot = bytes32(uint256(input.start) + input.size);
 
-        // ++input.size;
-        bytes32 slot = genericShiftItems(input, input.size, 1, true);
+        ++input.size;
+        // bytes32 slot = genericShiftItems(input, input.size, 1, true);
 
         assembly {
             sstore(slot, val)
@@ -229,6 +229,12 @@ contract Store {
 
     function find(string memory varName, uint item) public view returns(bool, uint) {
       return Storage.find(varName.GenericArrayPtr(), item);
+    }
+
+    function returnFullArray(string memory varName) public view returns(uint[] memory arr) {
+      for(uint i = 0; i < size(varName); ++i) {
+        arr[i] = uintAtIndex(varName, i);
+      }
     }
     
 }

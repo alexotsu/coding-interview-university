@@ -352,6 +352,47 @@
         }
       }
     },
+    "src/ArrayQueue.sol": {
+      "lastModificationDate": 1665952442831,
+      "contentHash": "1f08e50ab88e7e2b224504b6e7fc465b",
+      "sourceName": "src/ArrayQueue.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src\\PointerArray.sol"
+      ],
+      "versionRequirement": null,
+      "artifacts": {
+        "ArrayQueue": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "ArrayQueue.sol\\ArrayQueue.json"
+        }
+      }
+    },
     "src/Counter.sol": {
       "lastModificationDate": 1664047959490,
       "contentHash": "ae6c800a2b4c57768024d6e9423d39e8",
@@ -517,8 +558,8 @@
       }
     },
     "src/PointerArray.sol": {
-      "lastModificationDate": 1664748854903,
-      "contentHash": "6036cc54df5179d094ec358564f6c70b",
+      "lastModificationDate": 1666063704932,
+      "contentHash": "05e5db1d80a8dec2fe21d90242e0f8f0",
       "sourceName": "src/PointerArray.sol",
       "solcConfig": {
         "settings": {
@@ -598,8 +639,8 @@
       }
     },
     "test/Array.t.sol": {
-      "lastModificationDate": 1664748954393,
-      "contentHash": "1ec1cc99de6a01526c7a6cc2358960ec",
+      "lastModificationDate": 1666062263101,
+      "contentHash": "35dfba3dc2d510016ddccba198141e3f",
       "sourceName": "test/Array.t.sol",
       "solcConfig": {
         "settings": {
@@ -640,8 +681,8 @@
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
-        "CounterTest": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "Array.t.sol\\CounterTest.json"
+        "ArrayTest": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Array.t.sol\\ArrayTest.json"
         }
       }
     },
@@ -690,6 +731,55 @@
       "artifacts": {
         "LinkedListTest": {
           "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedList.t.sol\\LinkedListTest.json"
+        }
+      }
+    },
+    "test/queue/ArrayQueue.t.sol": {
+      "lastModificationDate": 1666063932758,
+      "contentHash": "5870458640bca2da2e7e3014600fbf80",
+      "sourceName": "test/queue/ArrayQueue.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src\\Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src\\ArrayQueue.sol",
+        "src\\PointerArray.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "TestArrayQueue": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "ArrayQueue.t.sol\\TestArrayQueue.json"
         }
       }
     },
