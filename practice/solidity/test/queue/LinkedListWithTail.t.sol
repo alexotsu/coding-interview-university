@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../../src/LinkedListWithTail.sol";
+import "../../src/baseStructures/LinkedListWithTail.sol";
 
 contract LinkedListTest is Test {
   LinkedListWithTail linkedList;

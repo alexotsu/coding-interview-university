@@ -1,7 +1,7 @@
 .vscode
 
-.practice/c/The-C-Programming-Language/
-.practice/solidity/out/
+practice/c/The-C-Programming-Language/
+practice/solidity/out/
 
 .idea
 *.iml
