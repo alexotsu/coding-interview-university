@@ -11,6 +11,7 @@
     - [Valgrind (video)](https://www.youtube.com/watch?v=fvTsFjDuag8)
   - [Let us C](https://books.google.co.in/books/about/Let_Us_C.html?id=7HrjAAAACAAJ)
   - [Complete C programming for beginners](https://youtu.be/KJgsSFOSQv0)
+  - [Learn C in Detail](https://www.scaler.com/topics/c/)
 
 - C++
   - [C++ Cheat Sheet](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/Cpp_reference.pdf)
@@ -58,6 +59,7 @@
   - [Effective Java 3rd Edition](https://www.amazon.com/Effective-Java-Joshua-Bloch-ebook/dp/B078H61SCH)
   - [Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer](https://www.youtube.com/watch?v=RBSGKlAvoiM&t=1744s)
   - [Top Java Interview Questions and Answers](https://www.interviewbit.com/java-interview-questions)
+  - [Data Structures in Java](https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
 - Go
   - [The Go programming Language](https://golang.org/)
   - [The Go programming Language (book)](http://www.gopl.io/)
