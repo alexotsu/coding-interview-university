@@ -1,16 +1,5 @@
 pragma solidity >= 0.8.0;
 
-// Find midpoint of array
-// - if odd number of items in array, will round down. Need to account for the array item it missed
-// - Maybe preferred behavior is just rounding up?
-
-
-// _ _ _ _ _
-
-
-// _ _ _ _ _ _ _ _ _ _ 
-// 0 1 2 3 4 5 6 7 8 9
-
 contract BinarySearch {
   // assumes sorted array
   // returns a bool specifying the value was found in case index == 0

@@ -12,8 +12,8 @@
   },
   "files": {
     "lib/forge-std/lib/ds-test/src/test.sol": {
-      "lastModificationDate": 1666520248943,
-      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "lastModificationDate": 1664047965073,
+      "contentHash": "a85cb92e605e48103a5375f81c8233f2",
       "sourceName": "lib/forge-std/lib/ds-test/src/test.sol",
       "solcConfig": {
         "settings": {
@@ -47,13 +47,13 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "test.sol/DSTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "test.sol\\DSTest.json"
         }
       }
     },
     "lib/forge-std/src/Script.sol": {
-      "lastModificationDate": 1666520247899,
-      "contentHash": "571dde8775a6214a03d6772ee330ead5",
+      "lastModificationDate": 1664047961908,
+      "contentHash": "3f41cc121fcff9fc98831ff9989c7e1b",
       "sourceName": "lib/forge-std/src/Script.sol",
       "solcConfig": {
         "settings": {
@@ -92,13 +92,13 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Script": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Script.sol/Script.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Script.sol\\Script.json"
         }
       }
     },
     "lib/forge-std/src/StdJson.sol": {
-      "lastModificationDate": 1666520247899,
-      "contentHash": "75c782f20a301ab9827060a03da071e4",
+      "lastModificationDate": 1664047961909,
+      "contentHash": "b05b6260054eb3262fb52f291bdcbcb6",
       "sourceName": "lib/forge-std/src/StdJson.sol",
       "solcConfig": {
         "settings": {
@@ -134,13 +134,13 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "stdJson": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "StdJson.sol/stdJson.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "StdJson.sol\\stdJson.json"
         }
       }
     },
     "lib/forge-std/src/Test.sol": {
-      "lastModificationDate": 1666520247899,
-      "contentHash": "6cab65c53a9548c2428a10697fd06dd1",
+      "lastModificationDate": 1664047961910,
+      "contentHash": "54fdeede177e65b60b8147f87c076a4d",
       "sourceName": "lib/forge-std/src/Test.sol",
       "solcConfig": {
         "settings": {
@@ -171,8 +171,8 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
@@ -181,22 +181,22 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/Test.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Test.sol\\Test.json"
         },
         "stdError": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/stdError.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Test.sol\\stdError.json"
         },
         "stdMath": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/stdMath.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Test.sol\\stdMath.json"
         },
         "stdStorage": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Test.sol/stdStorage.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Test.sol\\stdStorage.json"
         }
       }
     },
     "lib/forge-std/src/Vm.sol": {
-      "lastModificationDate": 1666520247900,
-      "contentHash": "4393052cda7a471a4a7408d69b3e84b1",
+      "lastModificationDate": 1664047961911,
+      "contentHash": "df2ce634a7fc39f53787cdaf9fa82ad1",
       "sourceName": "lib/forge-std/src/Vm.sol",
       "solcConfig": {
         "settings": {
@@ -230,13 +230,13 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Vm.sol/Vm.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Vm.sol\\Vm.json"
         }
       }
     },
     "lib/forge-std/src/console.sol": {
-      "lastModificationDate": 1666520247900,
-      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "lastModificationDate": 1664047961913,
+      "contentHash": "c8cf989d04bc2e3069e3d91facf3b69c",
       "sourceName": "lib/forge-std/src/console.sol",
       "solcConfig": {
         "settings": {
@@ -270,13 +270,13 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "console.sol/console.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "console.sol\\console.json"
         }
       }
     },
     "lib/forge-std/src/console2.sol": {
-      "lastModificationDate": 1666520247901,
-      "contentHash": "5df91f8e93efbfcccf68973dc1b74a70",
+      "lastModificationDate": 1664047961914,
+      "contentHash": "84e14285f3171a14073d0f81363094ac",
       "sourceName": "lib/forge-std/src/console2.sol",
       "solcConfig": {
         "settings": {
@@ -310,13 +310,13 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "console2.sol/console2.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "console2.sol\\console2.json"
         }
       }
     },
     "script/Counter.s.sol": {
-      "lastModificationDate": 1666455231316,
-      "contentHash": "0705c52104730a78aef4aa6694175c81",
+      "lastModificationDate": 1667768309428,
+      "contentHash": "1850b6d164b96b4e03d38cbb57358637",
       "sourceName": "script/Counter.s.sol",
       "solcConfig": {
         "settings": {
@@ -347,7 +347,7 @@
         }
       },
       "imports": [
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
@@ -356,13 +356,13 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "CounterScript": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Counter.s.sol/CounterScript.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Counter.s.sol\\CounterScript.json"
         }
       }
     },
     "src/baseStructures/LinkedList.sol": {
-      "lastModificationDate": 1666455231316,
-      "contentHash": "d2e5f24b3f5e7dfe5a2dbd2efab20a1a",
+      "lastModificationDate": 1667768309429,
+      "contentHash": "8d906395454d573d1201fdbf9c666111",
       "sourceName": "src/baseStructures/LinkedList.sol",
       "solcConfig": {
         "settings": {
@@ -396,16 +396,16 @@
       "versionRequirement": null,
       "artifacts": {
         "LinkedList": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedList.sol/LinkedList.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedList.sol\\LinkedList.json"
         },
         "StorageSlot": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedList.sol/StorageSlot.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedList.sol\\StorageSlot.json"
         }
       }
     },
     "src/baseStructures/LinkedListWithTail.sol": {
-      "lastModificationDate": 1666455231317,
-      "contentHash": "5b4983f88668789cb069f1d2b4e9df78",
+      "lastModificationDate": 1667768309430,
+      "contentHash": "ab28a3dde862c2a1222e71724495d76a",
       "sourceName": "src/baseStructures/LinkedListWithTail.sol",
       "solcConfig": {
         "settings": {
@@ -436,18 +436,18 @@
         }
       },
       "imports": [
-        "src/baseStructures/StorageLinkedList.sol"
+        "src\\baseStructures\\StorageLinkedList.sol"
       ],
       "versionRequirement": null,
       "artifacts": {
         "LinkedListWithTail": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedListWithTail.sol/LinkedListWithTail.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListWithTail.sol\\LinkedListWithTail.json"
         }
       }
     },
     "src/baseStructures/PointerArray.sol": {
-      "lastModificationDate": 1666455231317,
-      "contentHash": "645d399ee988c8ef74b6f31c101a12a7",
+      "lastModificationDate": 1667768309431,
+      "contentHash": "05e5db1d80a8dec2fe21d90242e0f8f0",
       "sourceName": "src/baseStructures/PointerArray.sol",
       "solcConfig": {
         "settings": {
@@ -481,16 +481,16 @@
       "versionRequirement": null,
       "artifacts": {
         "Storage": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "PointerArray.sol/Storage.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "PointerArray.sol\\Storage.json"
         },
         "Store": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "PointerArray.sol/Store.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "PointerArray.sol\\Store.json"
         }
       }
     },
     "src/baseStructures/StorageLinkedList.sol": {
-      "lastModificationDate": 1666455231318,
-      "contentHash": "8e33d589c320949d886b1aad9bf952b7",
+      "lastModificationDate": 1667768309431,
+      "contentHash": "e0a014656c7f18455187b77784428130",
       "sourceName": "src/baseStructures/StorageLinkedList.sol",
       "solcConfig": {
         "settings": {
@@ -524,13 +524,95 @@
       "versionRequirement": null,
       "artifacts": {
         "StorageSlot": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "StorageLinkedList.sol/StorageSlot.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "StorageLinkedList.sol\\StorageSlot.json"
+        }
+      }
+    },
+    "src/binarySearch/BST.sol": {
+      "lastModificationDate": 1671649889494,
+      "contentHash": "f672b3fb89b580f9ef8fb3018d1f77cc",
+      "sourceName": "src/binarySearch/BST.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "BST": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "BST.sol\\BST.json"
+        }
+      }
+    },
+    "src/binarySearch/BSTImplementation.sol": {
+      "lastModificationDate": 1668296644120,
+      "contentHash": "ef254ad2cafd7b2f5f153cf59c9eb1a9",
+      "sourceName": "src/binarySearch/BSTImplementation.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src\\binarySearch\\BST.sol"
+      ],
+      "versionRequirement": null,
+      "artifacts": {
+        "BSTImplementation": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "BSTImplementation.sol\\BSTImplementation.json"
         }
       }
     },
     "src/binarySearch/BinarySearch.sol": {
-      "lastModificationDate": 1667068148039,
-      "contentHash": "1673fb4d7fd305e77b98bda72d8f1789",
+      "lastModificationDate": 1668216837808,
+      "contentHash": "cae7a6260a213cacaa6d83bbfe763871",
       "sourceName": "src/binarySearch/BinarySearch.sol",
       "solcConfig": {
         "settings": {
@@ -564,13 +646,53 @@
       "versionRequirement": null,
       "artifacts": {
         "BinarySearch": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "BinarySearch.sol/BinarySearch.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "BinarySearch.sol\\BinarySearch.json"
+        }
+      }
+    },
+    "src/bitManipulation/BitManipulation.sol": {
+      "lastModificationDate": 1667768309433,
+      "contentHash": "7bd55c6b56fa6c2638ad98dc4d08086c",
+      "sourceName": "src/bitManipulation/BitManipulation.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "BitPractice": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "BitManipulation.sol\\BitPractice.json"
         }
       }
     },
     "src/hashTable/HashTable.sol": {
-      "lastModificationDate": 1666520490432,
-      "contentHash": "c312af1a61a93573fae7b4ec3e91af7d",
+      "lastModificationDate": 1667768309433,
+      "contentHash": "867dfdfe23e507e828628ca117b68311",
       "sourceName": "src/hashTable/HashTable.sol",
       "solcConfig": {
         "settings": {
@@ -604,13 +726,13 @@
       "versionRequirement": null,
       "artifacts": {
         "HashTable": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "HashTable.sol/HashTable.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "HashTable.sol\\HashTable.json"
         }
       }
     },
     "src/queue/ArrayQueue.sol": {
-      "lastModificationDate": 1666492901319,
-      "contentHash": "a729e353a621f35626cfa734807d9499",
+      "lastModificationDate": 1667768309434,
+      "contentHash": "b128fa5bcd4b2df69aa1d73d76b59657",
       "sourceName": "src/queue/ArrayQueue.sol",
       "solcConfig": {
         "settings": {
@@ -641,18 +763,18 @@
         }
       },
       "imports": [
-        "src/baseStructures/PointerArray.sol"
+        "src\\baseStructures\\PointerArray.sol"
       ],
       "versionRequirement": null,
       "artifacts": {
         "ArrayQueue": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "ArrayQueue.sol/ArrayQueue.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "ArrayQueue.sol\\ArrayQueue.json"
         }
       }
     },
     "src/queue/LinkedListQueue.sol": {
-      "lastModificationDate": 1666492890195,
-      "contentHash": "2b34281fb4a8e50aea69573e2ac1f132",
+      "lastModificationDate": 1667768309435,
+      "contentHash": "8d631ec3ea09c0b3be435b18f3d048ac",
       "sourceName": "src/queue/LinkedListQueue.sol",
       "solcConfig": {
         "settings": {
@@ -683,19 +805,19 @@
         }
       },
       "imports": [
-        "src/baseStructures/LinkedListWithTail.sol",
-        "src/baseStructures/StorageLinkedList.sol"
+        "src\\baseStructures\\LinkedListWithTail.sol",
+        "src\\baseStructures\\StorageLinkedList.sol"
       ],
       "versionRequirement": null,
       "artifacts": {
         "LinkedListQueue": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedListQueue.sol/LinkedListQueue.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListQueue.sol\\LinkedListQueue.json"
         }
       }
     },
     "test/Array.t.sol": {
-      "lastModificationDate": 1666493000124,
-      "contentHash": "22e9f1fa1b41237d11eb8f5293bee89a",
+      "lastModificationDate": 1667768309435,
+      "contentHash": "b0f7b5ff770f8c52f669c610b90b22ca",
       "sourceName": "test/Array.t.sol",
       "solcConfig": {
         "settings": {
@@ -726,25 +848,25 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/baseStructures/PointerArray.sol"
+        "src\\baseStructures\\PointerArray.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "ArrayTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Array.t.sol/ArrayTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Array.t.sol\\ArrayTest.json"
         }
       }
     },
     "test/LinkedList.t.sol": {
-      "lastModificationDate": 1666492990045,
-      "contentHash": "ac789524cd09ceb0cc1fc0c0f6a70b6e",
+      "lastModificationDate": 1667768309436,
+      "contentHash": "29dad02399ac8029d6862a8bb2d5e46a",
       "sourceName": "test/LinkedList.t.sol",
       "solcConfig": {
         "settings": {
@@ -775,25 +897,75 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/baseStructures/LinkedList.sol"
+        "src\\baseStructures\\LinkedList.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "LinkedListTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedList.t.sol/LinkedListTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedList.t.sol\\LinkedListTest.json"
+        }
+      }
+    },
+    "test/binarySearch/BST.t.sol": {
+      "lastModificationDate": 1671649452505,
+      "contentHash": "5d2c1992ddc40021d7a923dbe0ce406e",
+      "sourceName": "test/binarySearch/BST.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src\\Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src\\binarySearch\\BST.sol",
+        "src\\binarySearch\\BSTImplementation.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "BSTTest": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "BST.t.sol\\BSTTest.json"
         }
       }
     },
     "test/binarySearch/BinarySearch.t.sol": {
-      "lastModificationDate": 1667068105243,
-      "contentHash": "15be5e077350230c2c7cab81c607b986",
+      "lastModificationDate": 1667768309437,
+      "contentHash": "7998937c980bc7b0680d43953220c5ea",
       "sourceName": "test/binarySearch/BinarySearch.t.sol",
       "solcConfig": {
         "settings": {
@@ -824,25 +996,25 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/binarySearch/BinarySearch.sol"
+        "src\\binarySearch\\BinarySearch.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "BinarySearchTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "BinarySearch.t.sol/BinarySearchTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "BinarySearch.t.sol\\BinarySearchTest.json"
         }
       }
     },
     "test/hashTable/HashTable.t.sol": {
-      "lastModificationDate": 1666520353311,
-      "contentHash": "f4dceca1ec032b938b929f4af8f653c2",
+      "lastModificationDate": 1667768309437,
+      "contentHash": "95d50d0742a73e9e58a5f8f24d672b31",
       "sourceName": "test/hashTable/HashTable.t.sol",
       "solcConfig": {
         "settings": {
@@ -873,25 +1045,25 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/hashTable/HashTable.sol"
+        "src\\hashTable\\HashTable.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "HashTableTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "HashTable.t.sol/HashTableTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "HashTable.t.sol\\HashTableTest.json"
         }
       }
     },
     "test/queue/ArrayQueue.t.sol": {
-      "lastModificationDate": 1666492945963,
-      "contentHash": "111c2773f79a6532b05053764d9eb786",
+      "lastModificationDate": 1667768309438,
+      "contentHash": "3b234a200bb13de893beec3586ae11e3",
       "sourceName": "test/queue/ArrayQueue.t.sol",
       "solcConfig": {
         "settings": {
@@ -922,26 +1094,26 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/baseStructures/PointerArray.sol",
-        "src/queue/ArrayQueue.sol"
+        "src\\baseStructures\\PointerArray.sol",
+        "src\\queue\\ArrayQueue.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "TestArrayQueue": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "ArrayQueue.t.sol/TestArrayQueue.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "ArrayQueue.t.sol\\TestArrayQueue.json"
         }
       }
     },
     "test/queue/LinkedListQueue.t.sol": {
-      "lastModificationDate": 1666492953774,
-      "contentHash": "98b67ddc8d8012ce99b8e4530833f669",
+      "lastModificationDate": 1667768309438,
+      "contentHash": "945fd82efd078184ee4d58deccbb5b40",
       "sourceName": "test/queue/LinkedListQueue.t.sol",
       "solcConfig": {
         "settings": {
@@ -972,27 +1144,27 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/baseStructures/LinkedListWithTail.sol",
-        "src/baseStructures/StorageLinkedList.sol",
-        "src/queue/LinkedListQueue.sol"
+        "src\\baseStructures\\LinkedListWithTail.sol",
+        "src\\baseStructures\\StorageLinkedList.sol",
+        "src\\queue\\LinkedListQueue.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "LinkedListQueueTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedListQueue.t.sol/LinkedListQueueTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListQueue.t.sol\\LinkedListQueueTest.json"
         }
       }
     },
     "test/queue/LinkedListWithTail.t.sol": {
-      "lastModificationDate": 1666492963198,
-      "contentHash": "4a98fb37e8c020903d669719b0b2e423",
+      "lastModificationDate": 1667768309439,
+      "contentHash": "4f4b537a4731be07f2546b7b564adc82",
       "sourceName": "test/queue/LinkedListWithTail.t.sol",
       "solcConfig": {
         "settings": {
@@ -1023,20 +1195,20 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
-        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src\\Script.sol",
         "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src\\Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/baseStructures/LinkedListWithTail.sol",
-        "src/baseStructures/StorageLinkedList.sol"
+        "src\\baseStructures\\LinkedListWithTail.sol",
+        "src\\baseStructures\\StorageLinkedList.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "LinkedListTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "LinkedListWithTail.t.sol/LinkedListTest.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "LinkedListWithTail.t.sol\\LinkedListTest.json"
         }
       }
     }
