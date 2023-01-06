@@ -446,8 +446,8 @@
       }
     },
     "src/baseStructures/PointerArray.sol": {
-      "lastModificationDate": 1667768309431,
-      "contentHash": "05e5db1d80a8dec2fe21d90242e0f8f0",
+      "lastModificationDate": 1672467074130,
+      "contentHash": "6e9e1a0a7356896f381af78c8327dfa0",
       "sourceName": "src/baseStructures/PointerArray.sol",
       "solcConfig": {
         "settings": {
@@ -529,8 +529,8 @@
       }
     },
     "src/binarySearch/BST.sol": {
-      "lastModificationDate": 1671649889494,
-      "contentHash": "f672b3fb89b580f9ef8fb3018d1f77cc",
+      "lastModificationDate": 1672435246563,
+      "contentHash": "284d5e2e45b171bfd11df5df54f79e22",
       "sourceName": "src/binarySearch/BST.sol",
       "solcConfig": {
         "settings": {
@@ -647,6 +647,48 @@
       "artifacts": {
         "BinarySearch": {
           "0.8.17+commit.8df45f5f.Windows.msvc": "BinarySearch.sol\\BinarySearch.json"
+        }
+      }
+    },
+    "src/binarySearch/Heap.sol": {
+      "lastModificationDate": 1672983457275,
+      "contentHash": "9e9dff82cd2c637233d11a79799ef837",
+      "sourceName": "src/binarySearch/Heap.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src\\baseStructures\\PointerArray.sol"
+      ],
+      "versionRequirement": null,
+      "artifacts": {
+        "Heap": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "Heap.sol\\Heap.json"
         }
       }
     },

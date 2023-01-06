@@ -161,6 +161,14 @@ library Storage {
       }
     }
 
+    function replace(GenericArray storage input, uint index, uint item) internal {
+      bytes32 slot = bytes32(uint256(input.start) + index);
+
+      assembly {
+        sstore(slot, item)
+      }
+    }
+
     function find(GenericArray storage input, uint item) public view returns(bool, uint){
       for(uint i = 0; i < input.size; ++i) {
         if(uintAtIndex(input, i) == item) {
@@ -225,6 +233,10 @@ contract Store {
 
     function remove(string memory varName, uint item) public {
       Storage.remove(varName.GenericArrayPtr(), item);
+    }
+
+    function replace(string memory varName, uint index, uint item) public {
+      Storage.replace(varName.GenericArrayPtr(), index, item);
     }
 
     function find(string memory varName, uint item) public view returns(bool, uint) {
