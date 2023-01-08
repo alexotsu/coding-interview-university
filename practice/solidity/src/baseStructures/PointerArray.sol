@@ -54,7 +54,6 @@ library Storage {
         bytes32 slot = bytes32(uint256(input.start) + input.size);
 
         ++input.size;
-        // bytes32 slot = genericShiftItems(input, input.size, 1, true);
 
         assembly {
             sstore(slot, val)
@@ -70,59 +69,61 @@ library Storage {
     }
 
     // @param startIndex values starting at and including startIndex will be shifted
-    // @param shiftDistance positive for appending, negative for removing
+    // @param shiftDistance distance to shift array values
     // @param append true if expanding array, false if deleting from array.
-    // @return for appends, first empty storage location. For deletes, storage location of first deleted item.
-    // for appends: if `startIndex` is left of middle, shifts left values left by `shiftDistance` slots
-    // for deletes: if `
+    // @return indexLoc: for appends, first empty storage location. For deletes, storage location of first deleted item.
     function genericShiftItems(GenericArray storage input, uint startIndex, uint shiftDistance, bool append) public returns(bytes32 indexLoc) {
 
       if(append) {
-        ++input.size;
         if(startIndex == 0) { // if prepend
           input.start = bytes32(uint256(input.start) - shiftDistance);
         } else {
-          bool shiftLeft = input.size / startIndex < 2 || input.size < 3; // if index is left of middle, shift left items left. Requires updating input.start
+          bool shiftLeft = startIndex < (input.size / 2) || input.size < 3; // if index is left of middle, shift left items left. Requires updating input.start
           if(shiftLeft) {
-            input.start = bytes32(uint256(input.start) - shiftDistance);
             for(uint i = uint(input.start); i < uint(input.start) + startIndex; ++i) {
               bytes32 ptr = bytes32(i);
               assembly {
-                sstore(ptr, sload(sub(ptr, shiftDistance)))
+                sstore(sub(ptr, shiftDistance), sload(ptr))
               }
             }
+            input.start = bytes32(uint256(input.start) - shiftDistance);
           } else {
             for(uint i = uint(input.start) + input.size - 1; i >= uint(input.start) + startIndex; --i) {
               bytes32 ptr = bytes32(i);
               assembly {
-                sstore(ptr, sload(add(shiftDistance, ptr)))
+                sstore(add(ptr, shiftDistance), sload(ptr))
               }
             }
           }
         }
+
+        ++input.size;
+
       } else { // if not append
-        --input.size;
         if(startIndex == 0) { // if remove index[0]
           input.start = bytes32(uint256(input.start) + shiftDistance);
         } else {
-          bool shiftRight = input.size / startIndex < 2 || input.size < 3; // if index is left of middle, shift left items right. Requires updating input.start
-          if(shiftRight) {
-            input.start = bytes32(uint256(input.start) + shiftDistance);
-            for(uint i = uint(input.start) + startIndex; i >= uint(input.start); --i) {
+          bool shiftLeft = startIndex < (input.size / 2) || input.size < 3;
+          if(shiftLeft) {
+            for(uint i = uint(input.start) + startIndex; i > uint(input.start); --i) {
               bytes32 ptr = bytes32(i);
               assembly {
-                sstore(ptr, sload(add(shiftDistance, ptr)))
+                sstore(ptr, sload(sub(ptr, shiftDistance))) // copy the value one slot to the left into the current slot
               }
             }
+            input.start = bytes32(uint256(input.start) + shiftDistance);
           } else {
-            for(uint i = uint(input.start) + input.size - 1; i >= uint(input.start) + startIndex; --i) {
+            for(uint i = uint(input.start) + startIndex; i < uint(input.start) + input.size; ++i) {
               bytes32 ptr = bytes32(i);
               assembly {
-                sstore(ptr, sload(sub(ptr, shiftDistance)))
+                sstore(ptr, sload(add(ptr, shiftDistance)) )// copy the value one slot to the right into the current slot
               }
             }
           }
         }
+
+        --input.size;
+
       }
 
       return bytes32(uint(input.start) + startIndex);
