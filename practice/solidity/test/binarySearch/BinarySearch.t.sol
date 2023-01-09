@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../../src/binarySearch/BinarySearch.sol";
+import "../../src/binaryTrees/BinarySearch.sol";
 
 contract BinarySearchTest is Test {
   BinarySearch binarySearch;

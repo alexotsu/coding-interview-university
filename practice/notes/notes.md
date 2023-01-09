@@ -161,5 +161,18 @@ Sorting a heap can be done in fixed space
 
 ## Building a heap
 Start from the bottom of the heap (back of the array), and bubble all non-heap items down.
-* Intuitively, this works because each new item should have a legal heap below it
+* Intuitively, this works because bubbling down creates a sorted heap from that point onward
 
+Example: [38, 41, 27, 50, 11, 10, 40, 37, 39, 22]
+22: legal heap
+22, 39: bubble 22 down
+39, 22, 37: legal heap
+39, 22, 37, 40: bubble 40 down
+
+Issue I'm currently running into is:
+    `out of range` error. I think it comes from `sift_down` because that is looking for child indices
+    The problem also is because it tries to sift down where there is no sifting necessary
+
+    2 issues:
+        1. the while loop in `sift_down` can query indices out of range
+        2. For a heap with 0 or 1 child nodes, `sift_down` will failr because it will still try to query both.

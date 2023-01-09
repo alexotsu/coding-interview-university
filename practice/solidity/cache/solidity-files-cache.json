@@ -446,8 +446,8 @@
       }
     },
     "src/baseStructures/PointerArray.sol": {
-      "lastModificationDate": 1673123880818,
-      "contentHash": "29023b21354e6a43ae153f369ae87b37",
+      "lastModificationDate": 1673159691253,
+      "contentHash": "148ffb1fe52531c2833452f7516ae109",
       "sourceName": "src/baseStructures/PointerArray.sol",
       "solcConfig": {
         "settings": {
@@ -528,10 +528,10 @@
         }
       }
     },
-    "src/binarySearch/BST.sol": {
+    "src/binaryTrees/BST.sol": {
       "lastModificationDate": 1672984450984,
       "contentHash": "829e1836f381c61fd686dd35f13b55cd",
-      "sourceName": "src/binarySearch/BST.sol",
+      "sourceName": "src/binaryTrees/BST.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -568,10 +568,10 @@
         }
       }
     },
-    "src/binarySearch/BSTImplementation.sol": {
+    "src/binaryTrees/BSTImplementation.sol": {
       "lastModificationDate": 1672984450985,
       "contentHash": "03e9431d55d3946e70795b55b25f98b1",
-      "sourceName": "src/binarySearch/BSTImplementation.sol",
+      "sourceName": "src/binaryTrees/BSTImplementation.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -601,7 +601,7 @@
         }
       },
       "imports": [
-        "src/binarySearch/BST.sol"
+        "src/binaryTrees/BST.sol"
       ],
       "versionRequirement": null,
       "artifacts": {
@@ -610,10 +610,10 @@
         }
       }
     },
-    "src/binarySearch/BinarySearch.sol": {
+    "src/binaryTrees/BinarySearch.sol": {
       "lastModificationDate": 1672984450986,
       "contentHash": "40638b1ae1f85954a37c0d5e31f8d7e0",
-      "sourceName": "src/binarySearch/BinarySearch.sol",
+      "sourceName": "src/binaryTrees/BinarySearch.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -650,10 +650,10 @@
         }
       }
     },
-    "src/binarySearch/Heap.sol": {
-      "lastModificationDate": 1672984950310,
-      "contentHash": "07acd75fd717f34c35926ad1ff7392bc",
-      "sourceName": "src/binarySearch/Heap.sol",
+    "src/binaryTrees/Heap.sol": {
+      "lastModificationDate": 1673235128394,
+      "contentHash": "8c45d0643800a081780cae5d9f2cbc6c",
+      "sourceName": "src/binaryTrees/Heap.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -858,8 +858,8 @@
       }
     },
     "test/Array.t.sol": {
-      "lastModificationDate": 1673124924039,
-      "contentHash": "05d7faeb62048069c6e31cfc983f5e27",
+      "lastModificationDate": 1673211396515,
+      "contentHash": "4751e7b52dec41053959b50ac1972aae",
       "sourceName": "test/Array.t.sol",
       "solcConfig": {
         "settings": {
@@ -956,8 +956,8 @@
       }
     },
     "test/binarySearch/BST.t.sol": {
-      "lastModificationDate": 1672984450986,
-      "contentHash": "03ad80d1e37fda0382642eacab030cf0",
+      "lastModificationDate": 1673139564280,
+      "contentHash": "35076f39c3ce95205cc95e893edfb34c",
       "sourceName": "test/binarySearch/BST.t.sol",
       "solcConfig": {
         "settings": {
@@ -995,8 +995,8 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/binarySearch/BST.sol",
-        "src/binarySearch/BSTImplementation.sol"
+        "src/binaryTrees/BST.sol",
+        "src/binaryTrees/BSTImplementation.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
@@ -1006,8 +1006,8 @@
       }
     },
     "test/binarySearch/BinarySearch.t.sol": {
-      "lastModificationDate": 1672984091564,
-      "contentHash": "15be5e077350230c2c7cab81c607b986",
+      "lastModificationDate": 1673139566662,
+      "contentHash": "bf6853217d3e3d4659f9cf2812f814d7",
       "sourceName": "test/binarySearch/BinarySearch.t.sol",
       "solcConfig": {
         "settings": {
@@ -1045,12 +1045,62 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/binarySearch/BinarySearch.sol"
+        "src/binaryTrees/BinarySearch.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "BinarySearchTest": {
           "0.8.17+commit.8df45f5f.Darwin.appleclang": "BinarySearch.t.sol/BinarySearchTest.json"
+        }
+      }
+    },
+    "test/binarySearch/Heap.t.sol": {
+      "lastModificationDate": 1673235101231,
+      "contentHash": "3e2cf31d2855a5bd0dd3ee60f63b4488",
+      "sourceName": "test/binarySearch/Heap.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "src/baseStructures/PointerArray.sol",
+        "src/binaryTrees/Heap.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "HeapTest": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Heap.t.sol/HeapTest.json"
         }
       }
     },

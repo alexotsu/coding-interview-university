@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../../src/binarySearch/BSTImplementation.sol";
+import "../../src/binaryTrees/BSTImplementation.sol";
 
 contract BSTTest is Test {
     uint constant MAX_RANGE = 100;

@@ -98,4 +98,15 @@ contract ArrayTest is Test {
         assertEq(index, size - 1);
         assertEq(store.uintAtIndex(varName, index), lastVal);
     }
+
+    function testReplace() public {
+        uint size = 10;
+        uint lastVal = seedArray(size, store);
+        uint indexAtOne = store.uintAtIndex(varName, 1);
+        uint indexAtSeven = store.uintAtIndex(varName, 7);
+        store.replace(varName, 1, indexAtSeven);
+        store.replace(varName, 7, indexAtOne);
+        assertEq(store.uintAtIndex(varName, 1), indexAtSeven);
+        assertEq(store.uintAtIndex(varName, 7), indexAtOne);
+    }
 }
